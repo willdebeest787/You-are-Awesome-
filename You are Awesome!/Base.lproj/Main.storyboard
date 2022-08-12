@@ -16,29 +16,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vti-GU-p20">
-                                <rect key="frame" x="25" y="76" width="324" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGray6Color"/>
-                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="29"/>
-                                <color key="textColor" systemColor="tintColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qom-bJ-2w1">
-                                <rect key="frame" x="115" y="187" width="144" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qom-bJ-2w1">
+                                <rect key="frame" x="16" y="148" width="121.5" height="30.999999999999986"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qom-bJ-2w1" secondAttribute="height" multiplier="121:30" id="asJ-Bm-m2W"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Show Message" titleAlignment="automatic"/>
                                 <connections>
                                     <action selector="messageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ral-BV-i0V"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQp-bg-Er5">
+                                <rect key="frame" x="237" y="148" width="122.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Another Button"/>
+                                <connections>
+                                    <action selector="anothermessageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Slu-Qv-5z3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vti-GU-p20">
+                                <rect key="frame" x="188" y="84" width="0.0" height="0.0"/>
+                                <color key="tintColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="29"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bB0-c7-dW9">
+                                <rect key="frame" x="17" y="226" width="343" height="402"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bB0-c7-dW9" secondAttribute="height" multiplier="343:402" id="FiP-n9-da4"/>
+                                    <constraint firstAttribute="width" secondItem="bB0-c7-dW9" secondAttribute="height" multiplier="81:101" id="M7z-PF-6L6"/>
+                                    <constraint firstAttribute="width" secondItem="bB0-c7-dW9" secondAttribute="height" multiplier="81:101" id="Ty6-td-0ht"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bB0-c7-dW9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" placeholder="YES" id="1QQ-YL-mIj"/>
+                            <constraint firstItem="Qom-bJ-2w1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="3LO-3u-nET"/>
+                            <constraint firstItem="bB0-c7-dW9" firstAttribute="centerX" secondItem="vti-GU-p20" secondAttribute="centerX" placeholder="YES" id="DI8-Rr-95K"/>
+                            <constraint firstItem="Qom-bJ-2w1" firstAttribute="baseline" secondItem="eQp-bg-Er5" secondAttribute="baseline" id="DbQ-8J-Yss"/>
+                            <constraint firstItem="bB0-c7-dW9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" placeholder="YES" id="Nze-9C-kBV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQp-bg-Er5" secondAttribute="trailing" constant="16" placeholder="YES" id="afj-eE-yDp"/>
+                            <constraint firstItem="bB0-c7-dW9" firstAttribute="width" secondItem="vti-GU-p20" secondAttribute="width" constant="250" id="brT-tl-heX"/>
+                            <constraint firstItem="eQp-bg-Er5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qom-bJ-2w1" secondAttribute="trailing" constant="8" symbolic="YES" id="g7x-wD-9hd"/>
+                            <constraint firstItem="vti-GU-p20" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" placeholder="YES" id="lk0-XQ-XO6"/>
+                            <constraint firstItem="bB0-c7-dW9" firstAttribute="centerY" secondItem="vti-GU-p20" secondAttribute="centerY" constant="250" id="pRU-u3-ppX"/>
+                            <constraint firstItem="Qom-bJ-2w1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="182" id="sBQ-QU-bGw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="afj-eE-yDp"/>
+                                <exclude reference="3LO-3u-nET"/>
+                                <exclude reference="DbQ-8J-Yss"/>
+                                <exclude reference="sBQ-QU-bGw"/>
+                                <exclude reference="lk0-XQ-XO6"/>
+                                <exclude reference="1QQ-YL-mIj"/>
+                                <exclude reference="DI8-Rr-95K"/>
+                                <exclude reference="Nze-9C-kBV"/>
+                                <exclude reference="brT-tl-heX"/>
+                                <exclude reference="pRU-u3-ppX"/>
+                                <exclude reference="g7x-wD-9hd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="vti-GU-p20" id="ZyV-fk-JYk"/>
+                        <outlet property="umageView" destination="bB0-c7-dW9" id="WDy-oy-e5y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
